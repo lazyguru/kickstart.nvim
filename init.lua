@@ -852,6 +852,8 @@ require('lazy').setup({
     'ellisonleao/gruvbox.nvim',
     priority = 1000, -- make sure to load this before all the other start plugins
     init = function()
+      -- enable true colors
+      vim.o.termguicolors = true
       vim.o.background = 'dark'
       -- Load the colorscheme here.
       vim.cmd.colorscheme 'gruvbox'
