@@ -896,6 +896,7 @@ require('lazy').setup({
     config = function()
       ---@diagnostic disable-next-line: missing-fields
       require('gruvbox').setup {
+        terminal_colors = true, -- add neovim terminal colors
         styles = {
           background = 'dark', -- Set the background to dark
           comments = { italic = false }, -- Disable italics in comments
